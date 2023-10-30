@@ -41,22 +41,46 @@ public class DevoirLab4 {
    }
 }
 
-    public static double multiplyer(double[][] args){
+    public static double multiplyEvenHalf(double[][] args){
         double product = 1;
+        int modifiableLength = args.length;
         for(int i = 0; i < args.length; i++){
-            for (int j = 0; j < args.length; j++){
-                if ((args[i][j] % 2) == 0) {product *=  args[i][j];}
+            for (int j = 0; j <= modifiableLength; j++){
+                if (args[i][j] % 2 == 0) {
+                    product *=  args[i][j];
+                }
+            modifiableLength--;
+            }
         }
+    return product;
     }
-        System.out.println(product);
-        return product;
+
+    public static double multiplyEvenFourth(double[][] args){
+        double product = 1;
+        int start = 0;
+        for(int i = 0; i < args.length; i++){
+            start++;
+            for (int j = start; j <= args.length - start; j++){
+                if (args[i][j] % 2 == 0) {
+                    product *=  args[i][j];
+                }
+            if (start == args.length / 2) {break;}
+            }
+        }
+    return product;
     }
 
     
     public static void main(String[] args) {
         //caser(8);
-        //double [][] table = inputer(2);
+        double [][] table = inputer(3);
         //System.out.println(Arrays.deepToString(table));
-        //multiplyer(map);
-        }
+        //double a = multiplyEvenHalf(table);
+        //double b = multiplyEvenFourth(table);
+        //System.out.println(a);
+        //System.out.println(b);
+
+        
+
     }
+}
