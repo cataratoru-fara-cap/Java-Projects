@@ -70,17 +70,46 @@ public class DevoirLab4 {
     return product;
     }
 
-    
+    public static double sumPosHalf(double[][] args){
+        double sum = 0;
+        int modifiableLength = args.length;
+        for(int i = 0; i < args.length; i++){
+            for (int j = 0; j <= modifiableLength; j++){
+                if (args[i][j] > 0) {
+                    sum +=  Math.pow(args[i][j], 2);
+                }
+            modifiableLength--;
+            }
+        }
+    return sum;
+    }
+
+    public static double sumPosFourth(double[][] args){
+        double sum = 0;
+        int start = 0;
+        for(int i = 0; i < args.length; i++){
+            start++;
+            for (int j = start; j <= args.length - start; j++){
+                if (args[i][j] > 0) {
+                    sum +=  Math.pow(args[i][j], 2);
+                }
+            if (start == args.length / 2) {break;}
+            }
+        }
+    return sum;
+    }
     public static void main(String[] args) {
         //caser(8);
-        double [][] table = inputer(3);
+        double [][] table = inputer(2);
         //System.out.println(Arrays.deepToString(table));
         //double a = multiplyEvenHalf(table);
         //double b = multiplyEvenFourth(table);
+        //double c = sumPosHalf(table);
+
         //System.out.println(a);
         //System.out.println(b);
+        //System.out.println(c);
 
-        
 
     }
 }
