@@ -26,22 +26,21 @@ public class DevoirLab4 {
                 break;
         }
     }
-
     //ex2 Inputer
     public static double[][] inputer(int N){
         double[][] table = new double[N][N];
-        for (int i = 0; i < N; i++){
-            for (int j = 0; j < N; j++){
-                Scanner input = new Scanner(System.in);
-                System.out.print("Enter a rational number for line " + i + " column " + j + ": ");
-                double num = input.nextDouble();
-                table[i][j] = num; 
+        try (Scanner input = new Scanner(System.in)) {
+            for (int i = 0; i < N; i++){
+                for (int j = 0; j < N; j++){
+                    
+                    System.out.print("Enter a rational number for line " + i + " column " + j + ": ");
+                    table[i][j] = input.nextDouble(); 
+                }
             }
-        }
-        System.out.println(Arrays.deepToString(table));
         return table;
-    }
-    
+   }
+}
+
     public static double multiplyer(double[][] args){
         double product = 1;
         for(int i = 0; i < args.length; i++){
@@ -55,9 +54,9 @@ public class DevoirLab4 {
 
     
     public static void main(String[] args) {
-        //int n = 8;
-        //caser(n);
-        //double[][] map = inputer(2);
+        //caser(8);
+        //double [][] table = inputer(2);
+        //System.out.println(Arrays.deepToString(table));
         //multiplyer(map);
+        }
     }
-}
