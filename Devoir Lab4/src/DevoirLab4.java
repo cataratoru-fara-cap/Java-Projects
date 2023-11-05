@@ -1,4 +1,4 @@
-import java.util.Arrays;
+//import java.util.Arrays;
 import java.util.Scanner;
 
 public class DevoirLab4 {
@@ -140,7 +140,7 @@ public class DevoirLab4 {
     }
     public static void main(String[] args) {
         //caser(8);
-        double [][] table = inputer(3);
+        //double [][] table = inputer(3);
         //ex 2 b)
         //System.out.println(Arrays.deepToString(table));
         
