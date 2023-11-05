@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 
 public class Ex3Simpler {
     public static String trouverPlusLongNom( String[] tab){
