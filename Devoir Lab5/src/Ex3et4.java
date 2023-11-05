@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Ex3 {
+public class Ex3et4 {
     public static ArrayList<String> trouverPlusLongNom( String[] tab){
          //cleans first name of empty spaces
         String first_name = tab[0].strip();
@@ -26,7 +26,8 @@ public class Ex3 {
     }
      
     public static void main(String[] args) {
-        String[] tab = {"Désiré ", "Albert", "André", "Bernard"};
+        String[] tab = {"Désiré ", "Albert", "André", "Bernard", "Chamile"};
         System.out.println(trouverPlusLongNom(tab));
+        //Les Problemes avec des Matrices de derniere fois sont deja optimises avec des methodes (Je ecrive leurs avec des methodes de premiere fois)
     }
 }
