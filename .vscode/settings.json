@@ -1,7 +1,6 @@
 {
     "java.project.sourcePaths": [
         "LabEx/Lab9Ex/src",
-        "LabEx/Lab8Ex/src",
         "LabEx/Lab7Ex/src",
         "LabEx/Lab9Ex"
     ]
