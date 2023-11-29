@@ -65,7 +65,7 @@ public class MatrixMethods {
     public static void main(String[] args) throws Exception {
         int[][] table = writeIntMatix(3, 3);
         System.out.println("\n");
-        //System.out.println(diagS(table) + "\n");
+        System.out.println(diagS(table) + "\n");
         //System.out.println(triangLDown(table) + "\n");
         //System.out.println(triangRDown(table) + "\n");
         //System.out.println(triangLUp(table) + "\n");
