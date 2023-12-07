@@ -71,6 +71,5 @@ public class MatrixMethods {
         //System.out.println(triangLUp(table) + "\n");
         //System.out.println(triangRUp(table) + "\n"); 
 
-
     }
 }
