@@ -1,7 +1,7 @@
 {
     "java.project.sourcePaths": [
+        "LabEx/Lab5Ex",
         "ExamPrep",
-        "Devoit Lab6/src",
-        "LabEx/Lab5Ex"
+        "LabEx/Lab11EX/src"
     ]
 }
