@@ -1,4 +1,3 @@
-import java.util.Arrays;
 
 public class Ex4 {
     public static int[] Concatenator(int [] args1, int [] args2){
