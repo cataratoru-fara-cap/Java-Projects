@@ -37,7 +37,7 @@ public class Loan {
     }
 
     public void computeInstalment() {
-        this.getSum() / 
+        this.getSum();
     }
     
     public void payInstalment() {
