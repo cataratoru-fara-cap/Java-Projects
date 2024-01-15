@@ -6,7 +6,7 @@ public class Loan {
     private String address;
     private String frequency;
     private double sum;
-    private double instalment;
+    protected double instalment;
     private double unpaidSum;
 
     public Loan(String firstName, String lastName, String address, double sum) {
