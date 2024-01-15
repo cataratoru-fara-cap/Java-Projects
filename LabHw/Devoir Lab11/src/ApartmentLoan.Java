@@ -7,13 +7,15 @@ public class ApartmentLoan extends Loan{
 
     public ApartmentLoan(String firstName, String lastName, String address, String frequency, double sum) {
         super(firstName, lastName, address, frequency, sum);
-        setUnpaidSum(this.getSum());
+        setUnpaidSum(this.getSum() + this.getSum() / 100 * 3 * 3);
     }
 
     @Override
     public void computeInstalment() {
-        if (getFrequency().equals("Trimestriele"))
-            this.instalment = super.getSum() / 3 + super.getSum() / 100 * 3;
+        String frequency = super.getFrequency();
+
+        if ((frequency != null) && (frequency.equals("Trimestriele")) )
+            this.instalment = super.getSum() / super.getSum() / 100 * 3;
         else    
             super.computeInstalment();
     }

@@ -10,20 +10,21 @@ public class Loan {
     private double unpaidSum;
 
     public Loan(String firstName, String lastName, String address, double sum) {
-        firstName = this.firstName;
-        lastName = this.lastName;
-        address = this.address;
-        sum = this.sum;
-        unpaidSum = this.sum;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.address = address;
+        this.sum = sum;
+        this.unpaidSum = sum;
     }
     
     public Loan(String firstName, String lastName, String address, String frequency, double sum) {
-        firstName = this.firstName;
-        lastName = this.lastName;
-        address = this.address;
-        frequency = this.frequency;
-        sum = this.sum;
-        unpaidSum = this.sum;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.address = address;
+        this.frequency = frequency;
+        this.sum = sum;
+        this.unpaidSum = sum;
+
     }
 
     public double getUnpaidSum() {
@@ -68,13 +69,16 @@ public class Loan {
 
     public void computeInstalment() {
         this.instalment = getSum() / 10;
+        System.out.println("Instalment to be paid is " + this.instalment);
     }
     
     public void payInstalment() {
-        if (getUnpaidSum() != 0)
+        if (getUnpaidSum() > 0.1) {
+            System.out.println("Your Debt is " + getUnpaidSum());
             setUnpaidSum(getUnpaidSum() - getInstalment());
-        else
-            System.out.println("Loan already payed");
+        } else {
+            System.out.println("No More Dept");
+        }
     }
 
     @Override
@@ -83,6 +87,5 @@ public class Loan {
                 + ", address=" + address + ", frequency=" + frequency + ", sum=" + sum + ", instalment=" + instalment
                 + ", unpaidSum=" + unpaidSum + "]";
     }
-    
 }
 
