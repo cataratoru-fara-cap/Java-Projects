@@ -6,10 +6,10 @@ public class Client{
     private String nom;
     private GregorianCalendar aniversaire;
     private String cnp;
-    Adresse adresse;
+    private Adresse adresse;
     ArrayList<Carte> cartes = new ArrayList<>();
     
-    public Client(String nom, GregorianCalendar aniversaire, String cnp, String addresse){
+    public Client(String nom, GregorianCalendar aniversaire, String cnp, Adresse addresse){
          this.nom = nom;
          this.aniversaire = aniversaire;
          this.cnp = cnp;
@@ -23,7 +23,7 @@ public class Client{
     public Carte supprimerCarte (String iban){
         Carte returnable = null;
         for (Carte c : cartes) {
-            if (c.getIban.equals(iban)) {
+            if (c.iban.equals(iban)) {
                 returnable = c;
                 cartes.remove(c);
             }
@@ -31,4 +31,12 @@ public class Client{
         }
         return returnable;
     }
+
+    @Override
+    public String toString() {
+        return "Client [nom=" + nom + ", aniversaire=" + aniversaire + ", cnp=" + cnp + ", adresse=" + adresse
+                + ", cartes=" + cartes + "]";
+    }
+
+    
 }

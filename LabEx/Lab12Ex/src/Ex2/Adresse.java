@@ -9,4 +9,11 @@ public class Adresse {
         this.rue = rue;
         this.numeoro = numeoro;
     }
+
+    @Override
+    public String toString() {
+        return "Adresse [ville=" + ville + ", rue=" + rue + ", numeoro=" + numeoro + "]";
+    }
+
+    
 }
