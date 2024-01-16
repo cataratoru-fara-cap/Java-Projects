@@ -1,3 +1,4 @@
+package Ex2;
 import java.util.GregorianCalendar;
 
 public class Test {

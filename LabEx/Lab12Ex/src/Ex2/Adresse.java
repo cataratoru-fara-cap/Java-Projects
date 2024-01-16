@@ -1,3 +1,4 @@
+package Ex2;
 public class Adresse {
     private String ville;
     private String rue;
