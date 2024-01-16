@@ -27,7 +27,7 @@ public abstract class HardwareProduit {
     }
     
     public void setPerformace(double performace) {
-        this.performace = performace;
+        this.performance = performace;
     }
 
     public void setLeiPrix(double leiPrix) {
@@ -37,7 +37,7 @@ public abstract class HardwareProduit {
     @Override
     public String toString() {
         return "HardwareProduit [monnaiePrix=" + monnaiePrix + ", leiPrix=" + leiPrix + ", note=" + note
-                + ", performace=" + performace + "]";
+                + ", performace=" + performance + "]";
     }
     
 }
