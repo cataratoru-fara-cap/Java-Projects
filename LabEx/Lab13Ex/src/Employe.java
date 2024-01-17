@@ -17,6 +17,10 @@ public abstract class Employe {
         this.projects.add(p);
     }
 
+    public void addProjets(ArrayList <Projet> p){
+        this.projects = p;
+    }
+
     public int calculerBugetTotal(){
         int buget = 0;
         for (Projet p : projects)
