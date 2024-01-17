@@ -21,4 +21,9 @@ public class Projet {
     public void setNom(String nom){
         this.nom = nom;
     }
+
+    @Override
+    public String toString() {
+        return "Projet [nom=" + nom + ", buget=" + buget + "]";
+    }
 }
