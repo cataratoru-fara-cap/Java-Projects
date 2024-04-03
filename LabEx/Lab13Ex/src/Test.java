@@ -11,10 +11,11 @@ public class Test {
         Manager Dumi = new Manager("Dumi");
         Programeur Elian = new Programeur("Elian");
 
+        BufferedReader br = null;
         try {
             FileReader fr = new FileReader("projets.txt");
-            BufferedReader br = new BufferedReader(fr);
             String strLine;
+            br = new BufferedReader(fr);
 
             while( (strLine = br.readLine()) != null ){
                 String[] data = strLine.split(" ");
@@ -33,12 +34,8 @@ public class Test {
             System.out.println("IOException");
             e.printStackTrace();
         } finally {
-            if (br != null) {
-                try {
-                    br.close();
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
+            if (br != null)
+                br.close(); 
             }
         }
 
