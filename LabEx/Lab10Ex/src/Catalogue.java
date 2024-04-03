@@ -13,6 +13,7 @@ public class Catalogue {
         for (int i  = 0; i < descriptionLivre.size(); i++){
             if (descriptionLivre.get(i).getPresentation().equals("")){
                 String titre = descriptionLivre.get(i).getLivre().getTitre();
+                @SuppressWarnings("unused")
                 String nom = descriptionLivre.get(i).getLivre().getAuteurs().get(0).getNom();
                 String presentation = JOptionPane.showInputDialog("Livre: " + titre);
                 descriptionLivre.get(i).setPresentation(presentation);

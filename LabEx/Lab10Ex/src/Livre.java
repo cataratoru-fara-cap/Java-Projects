@@ -11,6 +11,7 @@ public class Livre {
     private double  prixUnitaire;
     private double prixVente;
     public ArrayList <Personne> auteurs;
+    @SuppressWarnings("unused")
     private GregorianCalendar anneApparence;
 
     public Livre(String titre,int nombrePages, String isbn, GregorianCalendar anneApparence, double prixUnitaire, ArrayList<Personne> auteurs){
@@ -93,6 +94,7 @@ public class Livre {
 
     public String toString() {
         SimpleDateFormat formatter = new SimpleDateFormat("dd/mm/yy");
+        @SuppressWarnings("unused")
         String date = formatter.format(annee.getTime());
 
         return "Livre" + "tittre = " + titre + ", nombrePages = " + nombrePages + "date";
